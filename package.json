@@ -1,0 +1,22 @@
+{
+  "name": "parcel_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html ",
+    "build": "set NODE_ENV=production && parcel build index.html --out-dir build  --public-url build  --no-cache ",
+    "test": "echo \"Error: no test specified\" && exit 1 "
+  },
+  "keywords": [],
+  "author": "amormaid",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.8.1"
+  }
+}
