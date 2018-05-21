@@ -2,7 +2,7 @@
   "name": "parcel_example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "start": "parcel index.html ",
     "build": "set NODE_ENV=production && parcel build index.html --out-dir build  --public-url build  --no-cache ",
