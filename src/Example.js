@@ -4,7 +4,8 @@ const Example = ({ name, age }) => {
   return (
     <div>
       <h2>{name}</h2>
-      <h3>{animal}</h3>
+      <h3>{age}</h3>
+      <span>test</span>
     </div>
   );
 };
