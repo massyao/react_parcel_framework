@@ -1,22 +1,31 @@
 {
   "name": "parcel_example",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React application",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html ",
-    "build": "set NODE_ENV=production && parcel build index.html --out-dir build  --public-url build  --no-cache ",
-    "test": "echo \"Error: no test specified\" && exit 1 "
+    "clear-build-cache": "rm -rf dist/ .cache/",
+    "dev": "parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "amormaid",
+  "author": "Amormaid",
   "license": "MIT",
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
-  },
   "devDependencies": {
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.8.1"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.12.2",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }
